@@ -1,0 +1,30 @@
+{
+  "name": "team-generator",
+  "version": "1.0.0",
+  "description": "Dynamically generates a HTML webpage with cards filled with team member information",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iiTONELOC/team-generator.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Team-Generator",
+    "Inquirer"
+  ],
+  "author": "Anthony Tropeano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iiTONELOC/team-generator/issues"
+  },
+  "homepage": "https://github.com/iiTONELOC/team-generator#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  },
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
