@@ -6,6 +6,6 @@ test('creates an engineer object', () => {
     expect(engineer.name).toBe('Dave');
     expect(engineer.id).toBe('4');
     expect(engineer.email).toBe('test@email.com');
-    expect(engineer.github).toBe('githubUserName');
+    expect(engineer.getGitHub()).toBe('githubUserName');
     expect(engineer.getRole()).toBe('Engineer');
 })
