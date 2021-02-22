@@ -4,48 +4,9 @@ class GeneratePage {
     constructor(
         data ='') {
             this.data = data
-        // this.manager = manager
-        // this.engineer = engineer
-        // this.intern = intern
     }
-
-    // renderEngineer(dataEngineer){
-    //     return `${dataEngineer
-    //         .map(
-    //             ({
-    //                 name,
-    //                 id,
-    //                 email,
-    //                 gitHub,
-    //             }) => {
-    //                 return `<div class="col-1" style="width: 18rem;">
-    //                 <div class="card bg-dark text-dark">
-    //                     <div class="card-body bg-warning">
-    //                         <h2 class="card-title">${name}</h2>
-    //                         <p class="h4"><span><i class="fas fa-laptop-code"></i> </span>Engineer</p>
-    //                     </div>
-    //                     <div class="card-body text-white">
-    //                         <ul class="list-group list-group-flush my-4">
-    //                             <li class="list-group-item bg-secondary">ID: ${id} </li>
-    //                             <li class="list-group-item bg-secondary">Email: <a href="mailto:${email}"> Email:
-    //                             ${email} </a></li>
-    //                             <li class="list-group-item bg-secondary">GitHub: <a href='https://github.com/${gitHub}' rel='noopener' target='_blank'> GitHub: ${gitHub}</a></li>
-    //                         </ul>
-    //                     </div>
-    //                 </div>
-    //             </div>`;
-    //             }
-    //         )
-    //         .join(``)}`;
-    // }
-
+    
     createPage() {
-        // console.log(this.manager)
-        console.log(this.data)
-        console.log(this.data[0].getRole())
-        // console.log("You might have it fuck face!")
-        //console.log(this.manager.getRole());
-
         return `
         <!doctype html>
         <html lang="en">
@@ -81,13 +42,13 @@ class GeneratePage {
                             <div class="card bg-dark text-dark">
                                 <div class="card-body bg-warning">
                                     <h2>${employee.getName()}</h2>
-                                    <p class="h4"><span><i class="fas fa-user-tie"></i> </span>${employee.getRole()}</p>
+                                    <p class="h4"><span>${employee.getOffice ? `<span><i class="fas fa-user-tie"></i>` : employee.getGitHub ? `<i class="fas fa-laptop-code"></i>` : `<i class="fas fa-user-graduate"></i>`} </span>${employee.getRole()}</p>
                                 </div>
                                 <div class="card-body text-white">
                                     <ul class="list-group list-group-flush my-4 ">
                                         <li class="list-group-item bg-secondary">ID: ${employee.getID()}</li>
                                         <li class="list-group-item bg-secondary">Email: <a href="mailto:${employee.getEmail()}"> ${employee.getEmail()} </a></li>
-                                        <li class="list-group-item bg-secondary"> ${employee.getOffice ? `Office: ${employee.getOffice()}`: employee.getGitHub ? `GitHub: ${employee.getGitHub()}` : `School: ${employee.getSchool()}` }</li>
+                                        <li class="list-group-item bg-secondary"> ${employee.getOffice ? `Office: ${employee.getOffice()}`: employee.getGitHub ? `<a href="https://github.com/${employee.getGitHub()}" rel="noopener" target="_blank"> GitHub: ${employee.getGitHub()} </a>` : `School: ${employee.getSchool()}` }</li>
                                     </ul>
                                 </div>
                             </div>
@@ -103,10 +64,6 @@ class GeneratePage {
         </html>
         `
     }
-
-
-
-
 }
 
 
