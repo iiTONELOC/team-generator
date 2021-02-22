@@ -47,14 +47,14 @@ class GeneratePage {
                                 <div class="card-body text-white">
                                     <ul class="list-group list-group-flush my-4 ">
                                         <li class="list-group-item bg-secondary">ID: ${employee.getID()}</li>
-                                        <li class="list-group-item bg-secondary">Email: <a href="mailto:${employee.getEmail()}"> ${employee.getEmail()} </a></li>
+                                        <li class="list-group-item bg-secondary"><a href="mailto:${employee.getEmail()}">Email: ${employee.getEmail()}</a></li>
                                         <li class="list-group-item bg-secondary"> ${employee.getOffice ? `Office: ${employee.getOffice()}`: employee.getGitHub ? `<a href="https://github.com/${employee.getGitHub()}" rel="noopener" target="_blank"> GitHub: ${employee.getGitHub()} </a>` : `School: ${employee.getSchool()}` }</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         `
-                        })}
+                        }).join('')}
                         </div>
                     </div>
                 </div>
