@@ -1,7 +1,7 @@
 const { writeFile, copyFile } = require('../utils/generateSite');
 const GeneratePage = require('../src/page-template')
 const createPage = (data) => {
-    
+    console.log(data)
                     let myPromise = new Promise(function (myResolve, myReject) {
                         // "Producing Code" (May take some time)
                         myResolve(new GeneratePage(data).createPage()); // when successful
