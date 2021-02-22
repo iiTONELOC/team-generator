@@ -1,0 +1,23 @@
+.title{
+    min-height: 125px;
+}
+#cards{
+    width: 80%;
+}
+main{
+    margin-bottom: 48px;
+}
+body{
+    background-color: rgb(126, 126, 126);
+}
+.card{
+    box-shadow:10px 10px 8px black;
+}
+body a{
+    text-decoration: none;
+    color: white;
+}
+body a:hover{
+    text-decoration: none;
+    color: #FFA900;
+}
