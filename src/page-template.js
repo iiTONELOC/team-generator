@@ -21,6 +21,7 @@ class GeneratePage {
                 integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
             <link rel="stylesheet" href="./style.css">
             <script src="https://kit.fontawesome.com/c7e6266a9c.js" crossorigin="anonymous"></script>
+            <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
             <title>Profile Generator</title>
         </head>
         
