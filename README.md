@@ -25,9 +25,9 @@ Team Profile Generator is a Node.js application that dynamically generates an HT
 # Technology 
 | Technology | Description                        |Links ↘️ |
 | ---------- | -----------------------------------| ------|  
-| ![JavaScript](https://shields.io/static/v1?label=JavaScript&message=100%&color=yellow&style=flat-square) | ES6+ | [Jest](https://jestjs.io/) |
+| ![JavaScript](https://shields.io/static/v1?label=JavaScript&message=98%&color=yellow&style=flat-square) | ES6+ | [Jest](https://jestjs.io/) |
 | ![HTML](https://shields.io/static/v1?label=HTML&message=0%&color=orange&style=flat-square) | Hyper Text Markup Language | [Font Awesome](https://fontawesome.com/) |
-| ![CSS](https://shields.io/static/v1?label=CSS&message=1.8%&color=rebeccapurple&style=flat-square) | Cascading Style Sheets  | [Bootstrap](https://getbootstrap.com/) |
+| ![CSS](https://shields.io/static/v1?label=CSS&message=1.3%&color=rebeccapurple&style=flat-square) | Cascading Style Sheets  | [Bootstrap](https://getbootstrap.com/) |
 
 # Features
 This app features the Inquirer package for user prompts and jest for TDD.
